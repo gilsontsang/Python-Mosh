@@ -1,0 +1,114 @@
+# Ugly Heart
+
+print(' ' * 3 + '/\\' + ' ' * 2 + '/\\')
+print(' ' * 2 + '/' + ' ' * 2 + '\\' + '/' + ' ' * 2 + '\\')
+print(' ' * 2 + '\\' + ' ' * 6 + '/')
+print(' ' * 3 + '\\' + ' ' * 4 + '/')
+print(' ' * 4 + '\\' + ' ' * 2 + '/')
+print(' ' * 5 + '\\' + '/')
+
+# Circle
+
+print(' ' * 5 + '**' + ' ' * 2 + '**' + ' ' * 2 + '**')
+print(' ' * 2 + '**' + ' ' * 12 + '**')
+print(' ' * 1 + '**' + ' ' * 14 + '**')
+print('**' + ' ' * 16 + '**')
+print('**' + ' ' * 16 + '**')
+print(' ' * 1 + '**' + ' ' * 14 + '**')
+print(' ' * 2 + '**' + ' ' * 12 + '**')
+print(' ' * 5 + '**' + ' ' * 2 + '**' + ' ' * 2 + '**')
+
+# integers (prints 20, because python computes line by line)
+price = 10
+price = 20 
+print(price)
+
+# float
+rating = 4.9
+
+# boolean (case-sensitive)
+is_cat = True
+is_cat = False 
+
+# Define below to variables
+# We check in a patient named John Smith. He's 20 years old and is a new patient
+name = 'John Smith'
+age = 20
+is_newPatient = True
+
+# Input (String ONLY - always expects String)
+name = input('What is your name? ')
+color = input('What is your favorite color? ')
+print('Hi ' + name)
+print('You like the color ' + color)
+
+# Conversion
+birth_year = input('What year were you born in? ')
+age = 2020 - int(birth_year)
+print('Your age is ' + str(age))
+# Check type
+print(type(birth_year))
+print(type(age))
+
+# Pounds to Kilograms converter
+weight = input('What is your weight in pounds? ')
+kilogram = int(weight) * 0.453592
+print('Your weight ' + str(kilogram) + ' kilograms')
+
+# Escape character \
+course = 'Python\'s Course for Beginner\'s'
+
+# String that contains " and '
+course = "Python's Course for Beginners"
+course = "Python Course for "Beginners"'
+
+# String that includes "
+course = "\"Python Course for Beginners\""
+
+# String that spans multiple lines using '''
+course = '''
+Hi John,
+How are you
+I am good
+'''
+print(course)
+
+# Index of a String
+course = 'Python Course for Beginners'
+print(course[0]) #prints P
+print(course[-1]) #prints s
+print(course[-2]) #prints r
+print(course[0:3]) #prints Pyt
+print(course[0:]) #prints Python Course for Beginners
+
+# Concatenate String
+first = 'John'
+last = 'Smith'
+print(first + ' [' + last + '] ' + 'is a coder')
+
+# Formatted String
+msg = f'{first} [{last}] is a coder'
+print(msg)
+
+# Length
+course = 'Python for Beginners'
+print(len(course))
+
+# String methods
+# using a dot, it uses a method
+print(course.upper()) #Does not modify original String
+print(course.upper())
+print(course) #String was not modified
+print(course.find('P')) #finds the first P in the String, case-sensitive
+print(course.find('Beginners')) 
+print(course.replace('Beginnings, 'Absolute Beginners')) #again, does not replace original String
+print(course.title()) #returns a string where the first character in every word is upper case
+
+# in Operator
+print('Python' in course) #checks for exact value. Produces Boolean value
+
+
+
+
+
+
