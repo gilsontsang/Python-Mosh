@@ -86,25 +86,96 @@ while guess_count > 0:
  # Car game
 
 userInput = ""
+started = False
 
 while(userInput.lower() != "quit"):
   userInput= input("> ").lower()
   if userInput == "help":
-    print("start - to start the car")
-    print("stop - to stop the car")
-    print("quit - to exit")
+    print("""start - to start the car
+stop - to stop the car
+quit - to exit""")
   elif userInput == "start":
-    print("Car started...Ready to go!")
+    if not started:
+      print("Car started...Ready to go!")
+      started = True
+    else:
+      print("Car is already started!")
   elif userInput == "stop":
-    print("Car stopped.")
+    if not started:
+      print("Car is already stopped!")
+    else:
+      print("Car stopped")
+      started = False
   elif userInput == "quit":
     print("Exiting.")
   else:
     print("I don't understand that...")
-    
+
 ---
     
-    
- 
+# For-Loop
+# iterate each characters in String
+for item in 'Python':
+  print(item)
 
+# iterate each item in List
+for item in ['Mosh', 'John', 'Sarah']:
+  print(item)
+
+# iterate a ramge
+for item in range(10): # 0, 1,... 9
+  print(item)
+
+# iterate a range with steps
+for item in range(5,10,2): # 5, 7, 9
+  print(item)
+
+---
+
+# nested loop
+for x in range(4):
+  for y in range(3):
+    print(f"({x},{y})")
   
+# Draw a letter F with for-loop
+for number in [5,2,5,2,2]:
+  print("x" * number)
+  
+---
+
+# List
+numbers = [1,2,3,4]
+print(numbers[1]) # 2
+print(numbers[2:]) # 3 4
+numbers[0] = 5 # [5,2,3,4]
+
+---
+
+# Find largest number in list
+numbers = [5,6,7,23,3]
+index = 0
+
+for number in numbers:
+  print(f"largest number is now {index}")
+  if number > index:
+    index = number
+    
+# Adding numbers to list
+numbers.append(20) # append to end of list
+numbers.insert(0,10) # insert to position 0, the number 10
+numbers.remove(6) # removes a specific value
+numbers.clear() # clear entire list
+numbers.pop() # removes last item in list
+numbers.index(6) # finds the index of the value 6
+
+---
+
+# 2D list / Matrix
+matrix = [
+  [1,2,3],
+  [4,5,6],
+  [7,8,9]
+]
+for item in matrix:
+  for row in item:
+    print(row)
