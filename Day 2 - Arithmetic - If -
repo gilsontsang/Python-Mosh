@@ -1,0 +1,110 @@
+# Python follows BEDMAS
+
+# Import Math package
+import math
+
+# Modular
+print(10 % 3) # prints 1 (remainder)
+
+# Exponent (power)
+print(10 ** 3) # prints 1000
+
+# Augmented assignment operator (Increment)
+x = 10
+x += 3
+prints(x) # prints 13
+
+# Functions
+print(round(2.9)) # 3
+print(abs(-2.9)) # 2.9
+print(math.ceil(2.9)) # 3
+print(math.floor(2.9)) # 2
+
+---
+# Logical operator
+# if, else, NOT boolean statement
+price = 1000000
+has_good_credit = True
+has_criminal_record = False
+if has_good_credit and not has_criminal_record:
+  down_payment = 0.1 * price
+else:
+  down_payment = 0.2 * price
+print(f'down_payment: ${down_payment}')
+
+---
+
+# Comparison Operator (==, !=)
+# AND, OR operator
+x = 5
+y = 6
+z = 7
+
+if x == 5 and y == 8:
+  print("Sum is 13")
+elif x == 6 or y == 7 or z != 7:
+  print("Either x is 6, y is 7 or z is 8")
+else:
+  print("It is none of the above")
+
+---
+
+# Simple weight converter
+weight = input("What is your weight? ")
+selection = input("(L)bs or (K)g: ")
+if selection.upper() == "L":
+  weight = 0.45 * float(weight)
+  print(f"Your weight is {weight}kgs")
+elif selection.upper() == "K":
+  weight = 2.2 * float(weight)
+  print(f"Your weight is {weight}lbs")
+
+---
+
+# While loop
+i = 1 
+while i <= 5:
+  print(i)
+  i += 1
+  
+---
+
+# Guessing game
+secret_number = 5
+guess_count = 3
+while guess_count > 0:
+  guess_count -= 1
+  userInput = int(input("Guess a number: "))
+  if secret_number == userInput:
+    guess_count = 0 # can use the preferred break instead
+    print("That is correct!")
+  else:
+    print("Wrong")
+    
+ ---
+ 
+ # Car game
+
+userInput = ""
+
+while(userInput.lower() != "quit"):
+  userInput= input("> ").lower()
+  if userInput == "help":
+    print("start - to start the car")
+    print("stop - to stop the car")
+    print("quit - to exit")
+  elif userInput == "start":
+    print("Car started...Ready to go!")
+  elif userInput == "stop":
+    print("Car stopped.")
+  elif userInput == "quit":
+    print("Exiting.")
+  else:
+    print("I don't understand that...")
+    
+---
+    
+    
+ 
+
+  
